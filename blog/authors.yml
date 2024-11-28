@@ -1,12 +1,12 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+claycat:
+  name: Claycat
+  title: Backend Developer Dreamtree
+  url: https://github.com/claycat
+  image_url: https://github.com/claycat.png
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
+    github: claycat
+    linkedin: sugiljang
 
 slorber:
   name: Sébastien Lorber

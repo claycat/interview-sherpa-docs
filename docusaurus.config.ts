@@ -7,10 +7,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
 
   plugins: [
+    'docusaurus-plugin-image-zoom',
     [
       '@docusaurus/plugin-ideal-image',
       {
-        quality: 70,
+        quality: 100,
         max: 1030, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
@@ -81,6 +82,17 @@ const config: Config = {
   ],
 
   themeConfig: {
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      }
+    },
+
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Interview Sherpa',
@@ -137,6 +149,8 @@ const config: Config = {
             },
           ],
         },
+
+        
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Interview Sherpa Docs, Inc. Built with Docusaurus.`,
     },

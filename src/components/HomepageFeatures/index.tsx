@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI Powered Evaluation',
-    Svg: require('@site/static/img/aidar1.svg').default,
+    Svg: require('@site/static/img/aidar.svg').default,
     description: (
       <>
         Get feedback on your answers with AI powered evaluation
