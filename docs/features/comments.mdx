@@ -1,0 +1,70 @@
+---
+sidebar_position: 3
+---
+
+# Comments
+
+
+import Image from '@theme/IdealImage';
+
+Comments are answers to questions that you can save per node.
+
+It currently supports leaving nested replies for comments and changing visibility of comments.
+
+:::tip[Sign In]
+
+Signing in is necessary to add a comment
+:::
+
+## Adding Comments
+
+You can answer the question in the node by writing a comment.
+
+<center>
+  <Image img={require('./img/addcomment.gif')} style={{width: 600}} />
+</center>
+
+## Adding Replies
+
+Nested replies are supported
+
+<center>
+  <Image img={require('./img/replies.gif')} style={{width: 600}} />
+</center>
+
+
+## Editing and Deleting Comments
+
+It is not supported yet. It is a high priority for my next patch!
+
+## AI Evaluation
+
+Interview sherpa supports AI based evaluation for answers submitted.
+
+It uses openai's model gpt-4o-mini for generating evaluations.
+
+To apply for an evaluation, just click on the checkbox beside the add comment button, add comment!
+
+<center>
+  <Image img={require('./img/aievaluation.gif')} style={{width: 600}} />
+</center>
+
+### Evaluation Content
+
+The evaluation consists of 5 types of contents
+
+1. **Score:** The answer is rated on a score based on a scale of 10
+2. **Good:** Good aspects of the answer
+3. **Bad:** Where the answer could be more detailed, or incorrect.
+4. **Expected Keywords:** The possible keywords that the question was expecting.
+5. **Follow Up:** Follow up questions that could be asked based on the answer
+  
+  
+
+:::danger[AI Evaluation]
+
+This system uses artificial intelligence to evaluate and generate content. While we strive for accuracy, AI-generated responses may contain errors or inaccuracies. The content provided is for informational purposes only and should not be considered definitive or error-free.
+
+We do not accept liability for any consequences arising from reliance on AI-generated responses. Users are encouraged to exercise their judgment and verify the information independently when making decisions based on the AI's evaluation.
+
+:::
